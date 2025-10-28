@@ -9,10 +9,11 @@
     body {
       font-family: "Noto Sans TC", sans-serif;
       line-height: 1.8;
+      scroll-behavior: smooth;
     }
     header {
       text-align: center;
-      padding: 40px 0;
+      padding: 80px 0 40px;
       background: #f8f9fa;
     }
     header img {
@@ -36,9 +37,29 @@
       background: #f8f9fa;
       color: #666;
     }
+    .navbar {
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
   </style>
 </head>
 <body>
+
+  <!-- 導覽列 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">AI × ESG 展覽</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#highlight">展覽亮點</a></li>
+          <li class="nav-item"><a class="nav-link" href="#phases">四期展覽</a></li>
+          <li class="nav-item"><a class="nav-link" href="#games">互動遊戲</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- 頂端LOGO -->
   <header>
@@ -47,7 +68,7 @@
   </header>
 
   <!-- 展覽亮點介紹 -->
-  <section class="highlight text-center">
+  <section id="highlight" class="highlight text-center">
     <div class="container">
       <h2 class="fw-bold mb-4">展覽亮點介紹</h2>
       <p class="fs-5">運用 AI 打造 ESG 永續策展，結合科技創新與環保理念，讓參觀者體驗智慧策展的無限可能。</p>
@@ -55,7 +76,7 @@
   </section>
 
   <!-- 四期展覽介紹 -->
-  <section>
+  <section id="phases">
     <div class="container text-center">
       <h2 class="fw-bold mb-5">四期展覽介紹</h2>
       <div class="row g-4">
@@ -88,11 +109,11 @@
   </section>
 
   <!-- 互動遊戲介紹 -->
-  <section class="bg-light">
+  <section id="games" class="bg-light">
     <div class="container text-center">
       <h2 class="fw-bold mb-5">互動遊戲介紹</h2>
       <div class="row g-4">
-        
+
         <!-- 遊戲 1 -->
         <div class="col-md-6 col-lg-3">
           <div class="card p-3">
@@ -104,7 +125,7 @@
             <a href="#" class="btn btn-success w-100">前往遊戲</a>
           </div>
         </div>
-  
+
         <!-- 遊戲 2 -->
         <div class="col-md-6 col-lg-3">
           <div class="card p-3">
@@ -116,7 +137,7 @@
             <a href="#" class="btn btn-success w-100">前往遊戲</a>
           </div>
         </div>
-  
+
         <!-- 遊戲 3 -->
         <div class="col-md-6 col-lg-3">
           <div class="card p-3">
@@ -128,7 +149,7 @@
             <a href="#" class="btn btn-success w-100">前往遊戲</a>
           </div>
         </div>
-  
+
         <!-- 遊戲 4 -->
         <div class="col-md-6 col-lg-3">
           <div class="card p-3">
@@ -140,7 +161,7 @@
             <a href="#" class="btn btn-success w-100">前往遊戲</a>
           </div>
         </div>
-  
+
       </div>
     </div>
   </section>
