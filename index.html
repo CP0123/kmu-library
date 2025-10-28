@@ -40,6 +40,26 @@
     .navbar {
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+    /* 返回頂端按鈕 */
+    #backToTop {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 99;
+      background-color: #198754;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 12px 15px;
+      font-size: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+    #backToTop:hover {
+      background-color: #145c38;
+    }
   </style>
 </head>
 <body>
@@ -113,8 +133,6 @@
     <div class="container text-center">
       <h2 class="fw-bold mb-5">互動遊戲介紹</h2>
       <div class="row g-4">
-
-        <!-- 遊戲 1 -->
         <div class="col-md-6 col-lg-3">
           <div class="card p-3">
             <div class="ratio ratio-16x9 mb-3">
@@ -126,7 +144,6 @@
           </div>
         </div>
 
-        <!-- 遊戲 2 -->
         <div class="col-md-6 col-lg-3">
           <div class="card p-3">
             <div class="ratio ratio-16x9 mb-3">
@@ -138,7 +155,6 @@
           </div>
         </div>
 
-        <!-- 遊戲 3 -->
         <div class="col-md-6 col-lg-3">
           <div class="card p-3">
             <div class="ratio ratio-16x9 mb-3">
@@ -150,7 +166,6 @@
           </div>
         </div>
 
-        <!-- 遊戲 4 -->
         <div class="col-md-6 col-lg-3">
           <div class="card p-3">
             <div class="ratio ratio-16x9 mb-3">
@@ -161,7 +176,6 @@
             <a href="#" class="btn btn-success w-100">前往遊戲</a>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -171,6 +185,24 @@
     <p>© 2025 AI × ESG 永續策展計畫｜由生成式AI協作設計</p>
   </footer>
 
+  <!-- 返回頂端按鈕 -->
+  <button id="backToTop" title="返回頂端">↑</button>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // 顯示/隱藏按鈕
+    const backToTop = document.getElementById("backToTop");
+    window.onscroll = function() {
+      if (document.documentElement.scrollTop > 200) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+    // 點擊回頂端
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 </body>
 </html>
