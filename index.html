@@ -60,25 +60,6 @@
     #backToTop:hover {
       background-color: #145c38;
     }
-    .phase-card {
-      flex: 1 1 250px; /* 卡片寬度自適應並拉寬 */
-      min-width: 250px; 
-      max-width: 350px;
-      height: 300px;
-      background-size: cover;
-      background-position: center;
-      border-radius: 15px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 20px;
-      transition: transform 0.3s;
-    }
-    
-    .phase-card:hover {
-      transform: translateY(-5px);
-    }
   </style>
 </head>
 <body>
@@ -118,28 +99,31 @@
   <section id="phases">
     <div class="container text-center">
       <h2 class="fw-bold mb-5">四期展覽介紹</h2>
-      <div class="d-flex flex-column flex-lg-row justify-content-center align-items-stretch gap-4">
-        
-        <div class="card p-4 text-white phase-card" style="background-image: url('img/phase1-bg.jpg');">
-          <h5 class="fw-bold mt-3">第一期：AI與永續的初遇</h5>
-          <p>探索人工智慧如何融入永續議題，展現科技與環境的共生。</p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card p-3" style="background-image: url('img/phase1-bg.jpg');">
+            <h5 class="fw-bold mt-3">第一期：AI與永續的初遇</h5>
+            <p>探索人工智慧如何融入永續議題，展現科技與環境的共生。</p>
+          </div>
         </div>
-        
-        <div class="card p-4 text-white phase-card" style="background-image: url('img/phase2-bg.jpg');">
-          <h5 class="fw-bold mt-3">第二期：智慧醫療展望</h5>
-          <p>揭示AI在醫療領域的應用，從診斷到照護，開啟新時代的健康之旅。</p>
+        <div class="col-md-6 col-lg-3">
+          <div class="card p-3" style="background-image: url('img/phase1-bg.jpg');">
+            <h5 class="fw-bold mt-3">第二期：智慧醫療展望</h5>
+            <p>揭示AI在醫療領域的應用，從診斷到照護，開啟新時代的健康之旅。</p>
+          </div>
         </div>
-        
-        <div class="card p-4 text-white phase-card" style="background-image: url('img/phase3-bg.jpg');">
-          <h5 class="fw-bold mt-3">第三期：綠色數位轉型</h5>
-          <p>結合AI與節能技術，展現企業與環境共榮的未來藍圖。</p>
+        <div class="col-md-6 col-lg-3">
+          <div class="card p-3" style="background-image: url('img/phase1-bg.jpg');">
+            <h5 class="fw-bold mt-3">第三期：綠色數位轉型</h5>
+            <p>結合AI與節能技術，展現企業與環境共榮的未來藍圖。</p>
+          </div>
         </div>
-        
-        <div class="card p-4 text-white phase-card" style="background-image: url('img/phase4-bg.jpg');">
-          <h5 class="fw-bold mt-3">第四期：智慧城市未來</h5>
-          <p>以AI打造智慧交通與能源系統，描繪永續城市的美好願景。</p>
+        <div class="col-md-6 col-lg-3">
+          <div class="card p-3" style="background-image: url('img/phase1-bg.jpg');">
+            <h5 class="fw-bold mt-3">第四期：智慧城市未來</h5>
+            <p>以AI打造智慧交通與能源系統，描繪永續城市的美好願景。</p>
+          </div>
         </div>
-  
       </div>
     </div>
   </section>
