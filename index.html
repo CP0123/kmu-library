@@ -60,6 +60,30 @@
     #backToTop:hover {
       background-color: #145c38;
     }
+
+    .phase-bg-1 {
+      background: radial-gradient(circle, #ffffff 0%, #ebf7f9 40%, #d2edf4 70%, #97d6e7 100%);
+    }
+    
+    .phase-bg-2 {
+      background: radial-gradient(circle, #ffffff 0%, #fae7e7 40%, #f5c8c8 70%, #ea7e7e 100%);
+    }
+    
+    .phase-bg-3 {
+      background: radial-gradient(circle, #ffffff 0%, #f2eaf7 40%, #e3d0ee 70%, #bf91d7 100%);
+    }
+    
+    .phase-bg-4 {
+      background: radial-gradient(circle, #ffffff 0%, #fdfbf5 40%, #fcf7e8 70%, #faefcb 100%);
+    }
+    
+    .card {
+      border: none;
+      border-radius: 12px;
+    }
+
+
+    
   </style>
 </head>
 <body>
@@ -96,41 +120,55 @@
     </div>
   </section>
 
-  <!-- 四期展覽介紹 -->
-  <section id="phases">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-5">四期展覽介紹</h2>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-3">
-          <div class="card p-3" style="background-image: url('img/phase1-bg.jpg');">
-            <h5 class="fw-bold mt-3">第一期：醫學人文</h5>
-            <p>展區佈置醫師袍、手術服、手舉牌，提供讀者進行角色扮演。</p>
-            <p>另建立醫學人文藝術闖關，將醫學畫作結合拼圖遊戲，使讀者認識畫作中的醫學知識。</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card p-3" style="background-image: url('img/phase1-bg.jpg');">
-            <h5 class="fw-bold mt-3">第二期：飲食文學</h5>
-            <p>以「解憂食堂」為主題，將料理、食材融入場景設計，並從飲食文學中，擷取部分篇幅，作為互動遊戲的題目，使讀者透過閱讀文本，認識飲食對作者的涵義。</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card p-3" style="background-image: url('img/phase1-bg.jpg');">
-            <h5 class="fw-bold mt-3">第三期：推理文學</h5>
-            <p>展區佈置偵探辦案牆，以紅線連結館內空間圖，營造推理氛圍。</p>
-            <p>另結合線上版館內導覽，製作問答遊戲，使讀者身歷其境探尋館內，發掘未曾留意的角落。</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card p-3" style="background-image: url('img/phase1-bg.jpg');">
-            <h5 class="fw-bold mt-3">第四期：休閒文學</h5>
-            <p>展區佈置休閒雜誌牆，展示四大休閒主題之雜誌封面，並推廣線上閱讀。</p>
-            <p>另以深受讀者喜愛的「漫畫」為題，建置動漫對對碰遊戲，使讀者在遊戲過程認識館藏並借閱。</p>
-          </div>
+<!-- 四期展覽介紹 -->
+<section id="phases">
+  <div class="container">
+    <h2 class="fw-bold mb-5 text-center">四期展覽介紹</h2>
+    <div class="row g-4">
+
+      <!-- 第一期 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card p-3 text-start phase-bg-1">
+          <h5 class="fw-bold mt-2">第一期：醫學人文</h5>
+          <p>展區佈置醫師袍、手術服、手舉牌，提供讀者進行角色扮演。</p>
+          <p>另建立醫學人文藝術闖關，將醫學畫作結合拼圖遊戲，使讀者認識畫作中的醫學知識。</p>
+          <img src="img/phase1.jpg" class="img-fluid rounded mt-3" alt="第一期配圖">
         </div>
       </div>
+
+      <!-- 第二期 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card p-3 text-start phase-bg-2">
+          <h5 class="fw-bold mt-2">第二期：飲食文學</h5>
+          <p>以「解憂食堂」為主題，將料理、食材融入場景設計；並從飲食文學中擷取篇幅作為互動遊戲題目，讓讀者透過閱讀認識飲食意義。</p>
+          <img src="img/phase2.jpg" class="img-fluid rounded mt-3" alt="第二期配圖">
+        </div>
+      </div>
+
+      <!-- 第三期 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card p-3 text-start phase-bg-3">
+          <h5 class="fw-bold mt-2">第三期：推理文學</h5>
+          <p>展區佈置偵探辦案牆，以紅線連結館內空間圖，營造推理氛圍。</p>
+          <p>另結合線上導覽製作問答遊戲，帶領讀者探索館內未曾留意的角落。</p>
+          <img src="img/phase3.jpg" class="img-fluid rounded mt-3" alt="第三期配圖">
+        </div>
+      </div>
+
+      <!-- 第四期 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card p-3 text-start phase-bg-4">
+          <h5 class="fw-bold mt-2">第四期：休閒文學</h5>
+          <p>展區佈置休閒雜誌牆，展示四大主題雜誌封面，並推廣線上閱讀。</p>
+          <p>另以「漫畫」為題設計對對碰遊戲，使讀者在遊戲中認識館藏並借閱。</p>
+          <img src="img/phase4.jpg" class="img-fluid rounded mt-3" alt="第四期配圖">
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- 互動遊戲介紹 -->
 <section id="games" class="bg-light">
